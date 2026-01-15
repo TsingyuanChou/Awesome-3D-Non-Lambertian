@@ -38,34 +38,28 @@
 ### View-dependent Appearance Modeling
 #### Decomposition of Transmitted and Reflected Radiance
 
-**NeRFReN: Neural Radiance Fields With Reflections.** Yuan-Chen Guo, Di Kang, Linchao Bao, Yu He, Song-Hai Zhang. [<a href="[...](https://openaccess.thecvf.com/content/CVPR2022/html/Guo_NeRFReN_Neural_Radiance_Fields_With_Reflections_CVPR_2022_paper.html)">
-  <img src="https://img.shields.io/badge/Paper-CVPR22-blue" alt="Paper" height="15" style="vertical-align:middle" />
-</a>]  [<a href="https://bennyguo.github.io/nerfren">
-  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
-</a>]      [<a href="https://github.com/bennyguo/nerfren">
-  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
-</a>]
+**NeRFReN: Neural Radiance Fields With Reflections.** Yuan-Chen Guo, Di Kang, Linchao Bao, Yu He, Song-Hai Zhang. 
+[![paper](https://img.shields.io/badge/Paper-CVPR22-blue)](https://openaccess.thecvf.com/content/CVPR2022/html/Guo_NeRFReN_Neural_Radiance_Fields_With_Reflections_CVPR_2022_paper.html)
+[![project](https://img.shields.io/badge/Project-Page-yellow)](https://bennyguo.github.io/nerfren)
+[![github](https://img.shields.io/badge/Github-Repo-blue?logo=github)](https://github.com/bennyguo/nerfren)
 
 
 
 
 #### Directional Encoding for High-frequency Specularity
-**Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields.** Dor Verbin, Peter Hedman, Ben Mildenhall, Todd Zickler, Jonathan T. Barron, Pratul P. Srinivasan. [<a href="...">
-  <img src="https://img.shields.io/badge/Paper-CVPR22-blue" alt="Paper" height="15" style="vertical-align:middle" />
-</a>](https://openaccess.thecvf.com/content/CVPR2022/html/Verbin_Ref-NeRF_Structured_View-Dependent_Appearance_for_Neural_Radiance_Fields_CVPR_2022_paper.html)  [<a href="...">
-  <img src="https://img.shields.io/badge/Paper-TPAMI25-blue" alt="Paper" height="15" style="vertical-align:middle" />
-</a>](https://ieeexplore.ieee.org/abstract/document/10416701) [<a href="...">
-  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
-</a>](https://dorverbin.github.io/refnerf)    [<a href="...">
-  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
-</a>](https://github.com/google-research/multinerf)
+**Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields.** Dor Verbin, Peter Hedman, Ben Mildenhall, Todd Zickler, Jonathan T. Barron, Pratul P. Srinivasan. 
+[![paper](https://img.shields.io/badge/Paper-CVPR22-blue)](https://openaccess.thecvf.com/content/CVPR2022/html/Verbin_Ref-NeRF_Structured_View-Dependent_Appearance_for_Neural_Radiance_Fields_CVPR_2022_paper.html)
+[![paper](https://img.shields.io/badge/Paper-TPAMI25-blue)](https://ieeexplore.ieee.org/abstract/document/10416701)
+[![project](https://img.shields.io/badge/Project-Page-yellow)](https://dorverbin.github.io/refnerf)
+[![github](https://img.shields.io/badge/Github-Repo-blue?logo=github)](https://github.com/google-research/multinerf)
 
 
 
 
 ### Ray Tracing
 #### Reflection-aware Ray Tracing
-**Mirror-NeRF: Learning Neural Radiance Fields for Mirrors with Whitted-Style Ray Tracing.** Junyi Zeng, Chong Bao, Rui Chen, Zilong Dong, Guofeng Zhang, Hujun Bao, Zhaopeng Cui. [<a href="...">
+**Mirror-NeRF: Learning Neural Radiance Fields for Mirrors with Whitted-Style Ray Tracing.** Junyi Zeng, Chong Bao, Rui Chen, Zilong Dong, Guofeng Zhang, Hujun Bao, Zhaopeng Cui. 
+[<a href="...">
   <img src="https://img.shields.io/badge/Paper-MM23-red" alt="Paper" height="15" style="vertical-align:middle" />
 </a>](https://dl.acm.org/doi/abs/10.1145/3581783.3611857) [<a href="...">
   <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
@@ -173,3 +167,4 @@
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 
 </a>](https://eikonalfield.mpi-inf.mpg.de/)
+
