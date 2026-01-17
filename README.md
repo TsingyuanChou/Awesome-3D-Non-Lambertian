@@ -17,15 +17,20 @@
       - [Reflection-aware Ray Tracing](#i-reflection-aware-ray-tracing)
       - [Refraction-aware Ray Tracing](#ii-refraction-aware-ray-tracing)
     - [Inverse Rendering](#inverse-rendering)
-      - [Inverse Rendering for Arbitrary Reflectance](#i-inverse-rendering-for-arbitrary-reflectance)
+      - [Inverse Rendering for Surfaces of Arbitrary Reflectance](#i-inverse-rendering-for-surfaces-of-arbitrary-reflectance)
       - [Approximation of Light Transport, Joint Optimization of Geometry and Materials for Non-Lambertian Surfaces](#ii-approximation-of-light-transport-joint-optimization-of-geometry-and-materials-for-non-lambertian-surfaces)
-      - [Multi Stage Factorization and Optimization for Non-Lambertian Surfaces](#iii-multi-stage-factorization-and-optimization-for-non-lambertian-surfaces)
+      - [Multi-Stage Factorization and Optimization for Non-Lambertian Surfaces](#iii-multi-stage-factorization-and-optimization-for-non-lambertian-surfaces)
     - [Others](#others)
   - [Gaussian Splatting](#gaussian-splatting)
-    - [Component Decomposition](#component-decomposition)
-    - [Ray Tracing](#ray-tracing-1)
+    - [View-dependent Component Decomposition](#view-dependent-component-decomposition)
+      - [Decomposed Representations of Appearance](#i-decomposed-representations-of-appearance)
+      - [Decomposed Appearance from Geometry](#ii-decomposed-appearance-from-geometry)
+    - [Ray Tracing for Enhanced Rasterization](#ray-tracing-for-enhanced-rasterization)
     - [Inverse Rendering](#inverse-rendering-1)
-- [Datasets](#datasets)
+      - [Inverse Rendering for Surfaces of Arbitrary Reflectance](#i-inverse-rendering-for-surfaces-of-arbitrary-reflectance-1)
+      - [](#ii-environment-based-approximation-of-illumination-for-non-lambertian-surfaces)
+      - [](#iii-ray-tracing-augmented-inverse-rendering-for-non-lambertian-surfaces)
+- [Commonly Used Datasets](#commonly-used-datasets)
   - [Specular](#specular)
     - [Synthetic](#synthetic)
     - [Real World](#real-world)
@@ -388,7 +393,7 @@
 </a>
 
 
-**NeTO:Neural Reconstruction of Transparent Objects with Self-Occlusion Aware Refraction-Tracing.** *Zongcheng Li, Xiaoxiao Long, Yusen Wang, Tuo Cao, Wenping Wang, Fei Luo, Chunxia Xiao.*
+**NeTO: Neural Reconstruction of Transparent Objects with Self-Occlusion Aware Refraction-Tracing.** *Zongcheng Li, Xiaoxiao Long, Yusen Wang, Tuo Cao, Wenping Wang, Fei Luo, Chunxia Xiao.*
 <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Li_NeTONeural_Reconstruction_of_Transparent_Objects_with_Self-Occlusion_Aware_Refraction-Tracing_ICCV_2023_paper.html">
   <img src="https://img.shields.io/badge/Paper-ICCV23-blue" alt="Paper" height="15" style="vertical-align:middle" />
 </a>
@@ -461,7 +466,7 @@
 
 ### <span style="color: lightyellow;">Inverse Rendering</span>
 
-#### I. Inverse Rendering for Arbitrary Reflectance
+#### I. Inverse Rendering for Surfaces of Arbitrary Reflectance
 
 >2020
 
@@ -817,13 +822,468 @@
 ---
 
 ## Gaussian Splatting
-### Component Decomposition 
-### Ray Tracing
+
+### View-dependent Component Decomposition 
+
+#### I. Decomposed Representations of Appearance
+
+>2024
+
+**RefGaussian: Disentangling Reflections from 3D Gaussian Splatting for Realistic Rendering.** *Rui Zhang, Tianyue Luo, Weidong Yang, Ben Fei, Jingyi Xu, Qingyuan Zhou, Keyi Liu, Ying He.*
+<a href="https://arxiv.org/abs/2406.05852">
+  <img src="https://img.shields.io/badge/arXiv-2406.05852-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**HMGS: Hybrid Model of Gaussian Splatting for Enhancing 3D Reconstruction with Reflections.** *Hengbin Zhang, Chengliang Wang, Ji Liu, Tian Jiang, Yonggang Luo, Lecheng Xie.*
+<a href="https://link.springer.com/chapter/10.1007/978-981-96-0972-7_9">
+  <img src="https://img.shields.io/badge/Paper-ACCV24-003E8C" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+
+**Spec-Gaussian: Anisotropic View-Dependent Appearance for 3D Gaussian Splatting.** *Ziyi Yang, Xinyu Gao, Yang-Tian Sun, Yi-Hua Huang, Xiaoyang Lyu, Wen Zhou, Shaohui Jiao, Xiaojuan Qi, Xiaogang Jin.*
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/708e0d691a22212e1e373dc8779cbe53-Abstract-Conference.html">
+  <img src="https://img.shields.io/badge/Paper-NeurIPS24-purple" alt="paper" height="15" style="vertical-align:middle"/>
+</a><a href="https://ingra14m.github.io/Spec-Gaussian-website/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/ingra14m/Specular-Gaussians">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**DC-Gaussian: Improving 3D Gaussian Splatting for Reflective Dash Cam Videos.**
+*Linhan Wang, Kai Cheng, Shuo Lei, Shengkun Wang, Wei Yin, Chenyang Lei, Xiaoxiao Long, Chang-Tien Lu.*
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b51b50262b492dd89bb9cd3105a46702-Abstract-Conference.html">
+  <img src="https://img.shields.io/badge/Paper-NeurIPS24-purple" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://linhanwang.github.io/dcgaussian/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/linhanwang/DC-Gaussian">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**SpecGaussian with Latent Features: A High-quality Modeling of the View-dependent Appearance for 3D Gaussian Splatting.** *Zhiru Wang, Shiyun Xie, Chengwei Pan, Guoping Wang.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681059">
+  <img src="https://img.shields.io/badge/Paper-MM24-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/MarcWangzhiru/SpeclatentGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+>2025
+
+**Reflections Unlock: Geometry-Aware Reflection Disentanglement in 3D Gaussian Splatting for Photorealistic Scenes Rendering.**  *Jiayi Song, Zihan Ye, Qingyuan Zhou, Weidong Yang, Ben Fei, Jingyi Xu, Ying He, Wanli Ouyang.*
+<a href="https://arxiv.org/abs/2507.06103">
+  <img src="https://img.shields.io/badge/arXiv-2507.06103-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://ref-unlock.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/Kallyelish/Ref-Unlock">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**VoD-3DGS: View-opacity-Dependent 3D Gaussian Splatting.** *Mateusz Nowak, Wojciech Jarosz, Peter Chin.*
+<a href="https://arxiv.org/abs/2501.17978">
+  <img src="https://img.shields.io/badge/arXiv-2501.17978-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a> 
+
+**TR-Gaussians: High-fidelity Real-time Rendering of Planar Transmission and Reflection with 3D Gaussian Splatting.**  *Yong Liu, Keyang Ye, Tianjia Shao, Kun Zhou.*
+<a href="https://arxiv.org/abs/2511.13009">
+  <img src="https://img.shields.io/badge/arXiv-2511.13009-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**Dual Spherical Harmonics for 3D Gaussian Splatting: Novel View Synthesis with Dynamic Lighting.** *Alp Bora Orgun, Marco Volino, Adrian Hilton, Jean-Yves Guillemaut.*
+<a href="https://dl.acm.org/doi/full/10.1145/3756863.3769709">
+  <img src="https://img.shields.io/badge/Paper-CVMP25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Image-based View-dependent Appearance for 3D Gaussian Splatting.** *Yanan Guo, Ying Xie, Ying Chang, Benkui Zhang, Kangning Du, Lin Cao.*
+<a href="https://www.sciencedirect.com/science/article/pii/S0141938225002227">
+  <img src="https://img.shields.io/badge/Paper-Displa25-orange" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Gaussian Splatting with NeRF-based Color and Opacity.** *Dawid Malarz, Weronika Smolak-Dyżewska, Jacek Tabor, Sławomir Tadeja, Przemysław Spurek.*
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1077314224003540">
+  <img src="https://img.shields.io/badge/Paper-CVIU25-orange" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Glossy-Gaussian: Adaptive Anisotropic Gaussians for View-Dependent Appearances.** *Wendi Zhang, Tengfei Wang, Zongqian Zhan, Xin Wang.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10878500">
+  <img src="https://img.shields.io/badge/Paper-LSP25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/gwen233666/Glossy-Gaussian-Splatting">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**2D Gaussian Splatting-based Sparse-view Transparent Object Depth Reconstruction via Physics Simulation for Scene Update.** *Jeongyun Kim, Seunghoon Jeong, Giseop Kim, Myung-Hwan Jeon, Eunji Jun, Ayoung Kim.*
+<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Kim_2D_Gaussian_Splatting-based_Sparse-view_Transparent_Object_Depth_Reconstruction_via_Physics_ICCV_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-ICCV25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://jeongyun0609.github.io/TRAN-D/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/jeongyun0609/TRAN-D">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+
+#### II. Decomposed Appearance from Geometry
+
+>2024
+
+**Space-View Decoupled 3D Gaussians for Novel-View Synthesis of Mirror Reflections.** *Zhenwu Wang, Zhuopeng Li, Zhenhua Tang, Yanbin Hao, Huasen He.*
+<a href="https://link.springer.com/chapter/10.1007/978-981-96-0125-7_7">
+  <img src="https://img.shields.io/badge/Paper-PRICAI24-003E8C" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**Gaussian Splatting in Mirrors: Reflection-aware Rendering via Virtual Camera Optimization.** *Zihan Wang, Shuzhe Wang, Matias Turkulainen, Junyuan Fang, Juho Kannala.*
+<a href="https://bmvc2024.org/proceedings/945/">
+  <img src="https://img.shields.io/badge/Paper-BMVC24-000E8D" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://github.com/rzhevcherkasy/BMVC24-GSIM">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**Mirror-3DGS: Incorporating Mirror Reflections into 3D Gaussian Splatting.** *Jiarui Meng, Haijie Li, Yanmin Wu, Qiankun Gao, Shuzhou Yang, Jian Zhang.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10849936">
+  <img src="https://img.shields.io/badge/Paper-VCIP24-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**MirrorGaussian: Reflecting 3D Gaussians for Reconstructing Mirror Reflections.** *Jiayue Liu, Xiao Tang, Freeman Cheng, Roy Yang, Zhihao Li, Jianzhuang Liu, Yi Huang, Jiaqi Lin, Shiyong Liu, Xiaofei Wu, Songcen Xu, Chun Yuan.*
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-73220-1_22">
+  <img src="https://img.shields.io/badge/Paper-ECCV24-003E8C" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://mirror-gaussian.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**3D Gaussian Splatting with Deferred Reflection.** *Keyang Ye, Qiming Hou, Kun Zhou.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3641519.3657456">
+  <img src="https://img.shields.io/badge/Paper-SIGGRAPH24-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://gapszju.github.io/3DGS-DR/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/gapszju/3DGS-DR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+
+
+>2025
+
+**Car-GS: Addressing Reflective and Transparent Surface Challenges in 3D Car Reconstruction.** *Congcong Li, Jin Wang, Xiaomeng Wang, Xingchen Zhou, Wei Wu, Yuzhi Zhang, Tongyi Cao.*
+<a href="https://arxiv.org/abs/2501.11020">
+  <img src="https://img.shields.io/badge/arXiv-2501.11020-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://lcc815.github.io/Car-GS/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+
+**Seeing Through Reflections: Advancing 3D Scene Reconstruction in Mirror-Containing Environments with Gaussian Splatting.**
+*Zijing Guo, Yunyang Zhao, Lin Wang.*
+<a href="https://arxiv.org/abs/2509.18956">
+  <img src="https://img.shields.io/badge/arXiv-2509.18956-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**GlassGaussian: Extending 3D Gaussian Splatting for Realistic Imperfections and Glass Materials.** *Junming Cao, Jiadi Cui, Sören Schwertfeger.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10884729">
+  <img src="https://img.shields.io/badge/Paper-IEEE_Access25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Dynamic 3D Gaussian Reconstruction with Specular Reflection.** *Mingyang Zhao, Yuanzhi Xu, Yifan Zuo, Xiaoshui Huang, Qiang Chen, Yuming Fang.*
+<a href="https://ieeexplore.ieee.org/abstract/document/11084729">
+  <img src="https://img.shields.io/badge/Paper-ICIP25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**GS-SE: Gaussian Splatting for Novel View Synthesis in Specular Effects.** *Yang Bai, Zhengxuan Jiang, Ying Wang, Jiahao Wang, Xiaosheng Yu.*
+<a href="https://ieeexplore.ieee.org/abstract/document/11090650">
+  <img src="https://img.shields.io/badge/Paper-CCDC25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Disentangled Gaussian Splatting: High-Fidelity Relightable Volumetric Video through Geometry-Appearance Decoupling.** *Yifeng Zhou, Chao Zhang, Shuheng Wang, Wenfa Li, Xu Yi, Degang Wang, Yuzhong Chen, Shaohui Jiao*
+<a href="https://dl.acm.org/doi/full/10.1145/3757376.3771406">
+  <img src="https://img.shields.io/badge/Paper-SIGGRAPH_Aisa25TC-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**Improving Gaussian Splatting for Transparent Surface Reconstruction via Normal and De-lighting Priors.** *Mingwei Li, Pu Pang, Hehe Fan, Hua Huang, Yi Yang.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3746027.3754548">
+  <img src="https://img.shields.io/badge/Paper-MM25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a><a href="https://longxiang-ai.github.io/TSGS/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/longxiang-ai/TSGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+**Ref-GS: Directional Factorization for 2D Gaussian Splatting.** *Youjia Zhang, Anpei Chen, Yumin Wan, Zikai Song, Junqing Yu, Yawei Luo, Wei Yang.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Ref-GS_Directional_Factorization_for_2D_Gaussian_Splatting_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://ref-gs.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/YoujiaZhang/Ref-GS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+
+**MGSR: 2D/3D Mutual-boosted Gaussian Splatting for High-fidelity Surface Reconstruction under Various Light Conditions** *Qingyuan Zhou, Yuehu Gong, Weidong Yang, Jiaze Li, Yeqi Luo, Baixin Xu, Shuhao Li, Ben Fei, Ying He.*
+<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhou_MGSR_2D3D_Mutual-boosted_Gaussian_Splatting_for_High-fidelity_Surface_Reconstruction_under_ICCV_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-ICCV25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/TsingyuanChou/MGSR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+### Ray Tracing for Enhanced Rasterization
+
+>2025
+
+**Stochastic Ray Tracing of Transparent 3D Gaussians.** *Xin Sun, Iliyan Georgiev, Yun Fei, Miloš Hašan.*
+<a href="https://arxiv.org/abs/2504.06598">
+  <img src="https://img.shields.io/badge/arXiv-2504.06598-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**TraceFlow: Dynamic 3D Reconstruction of Specular Scenes Driven by Ray Tracing.** *Jiachen Tao, Junyi Wu, Haoxuan Wang, Zongxin Yang, Dawen Cai, Yan Yan.*
+<a href="https://arxiv.org/abs/2512.10095">
+  <img src="https://img.shields.io/badge/arXiv-2512.10095-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting.** *Chang Liu, Hongliang Yuan, Lianghao Zhang, Sichao Wang, Jianwei Guo, Shi-Sheng Huang.*
+<a href="https://arxiv.org/abs/2512.08334">
+  <img src="https://img.shields.io/badge/arXiv-2512.08334-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://aetheryne.github.io/HybridSplat/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+
+
+**EnvGS: Modeling View-Dependent Appearance with Environment Gaussian.**
+*Tao Xie, Xi Chen, Zhen Xu, Yiman Xie, Yudong Jin, Yujun Shen, Sida Peng, Hujun Bao, Xiaowei Zhou.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xie_EnvGS_Modeling_View-Dependent_Appearance_with_Environment_Gaussian_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://zju3dv.github.io/envgs/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/zju3dv/EnvGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
 ### Inverse Rendering
 
+#### I. Inverse Rendering for Surfaces of Arbitrary Reflectance
+
+>2024
 
 
-# Datasets
+
+**Phys3DGS: Physically-based 3D Gaussian Splatting for Inverse Rendering.** *Euntae Choi, Sungjoo Yoo.*
+<a href="https://arxiv.org/abs/2409.10335">
+  <img src="https://img.shields.io/badge/arXiv-2409.10335-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**Subsurface Scattering for Gaussian Splatting.** *Jan-Niklas Dihlmann, Arjun Majumdar, Andreas Engelhardt, Raphael Braun, Hendrik P.A. Lensch.*
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/dc72529d604962a86b7730806b6113fa-Abstract-Conference.html">
+  <img src="https://img.shields.io/badge/Paper-NeurIPS24-purple" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://sss.jdihlmann.com/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/cgtuebingen/SSS-GS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**Relightable 3D Gaussians: Realistic Point Cloud Relighting with BRDF Decomposition and Ray Tracing.** *Jian Gao, Chun Gu, Youtian Lin, Zhihao Li, Hao Zhu, Xun Cao, Li Zhang, Yao Yao.*
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-72995-9_5">
+  <img src="https://img.shields.io/badge/Paper-ECCV24-003E8C" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://nju-3dv.github.io/projects/Relightable3DGaussian/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/NJU-3DV/Relightable3DGaussian">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+
+**GS-IR: 3D Gaussian Splatting for Inverse Rendering.** *Zhihao Liang, Qi Zhang, Ying Feng, Ying Shan, Kui Jia.*
+<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Liang_GS-IR_3D_Gaussian_Splatting_for_Inverse_Rendering_CVPR_2024_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR24-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://lzhnb.github.io/project-pages/gs-ir.html">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/lzhnb/GS-IR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+>2025
+
+**3D Gaussian Inverse Rendering with Approximated Global Illumination.**
+*Zirui Wu, Jianteng Chen, Laijian Li, Shaoteng Wu, Zhikai Zhu, Kang Xu, Martin R. Oswald, Jie Song.*
+<a href="https://arxiv.org/abs/2504.01358">
+  <img src="https://img.shields.io/badge/arXiv-2504.01358-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://wuzirui.github.io/gs-ssr/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/wuzirui/gs-ssr">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**MatSpray: Fusing 2D Material World Knowledge on 3D Geometry.** *Philipp Langsteiner, Jan-Niklas Dihlmann, Hendrik P.A. Lensch.*
+<a href="https://arxiv.org/abs/2512.18314">
+  <img src="https://img.shields.io/badge/arXiv-2512.18314-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a><a href="https://matspray.jdihlmann.com/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/cgtuebingen/MatSpray">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**InvGS: a Novel Real-Time Inverse Rendering Framework Utilizing 3D Gaussian Splatting.** *Yang Pu, Qingfeng Wu.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10888981">
+  <img src="https://img.shields.io/badge/Paper-ICASSP25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**GI-GS: Global Illumination Decomposition on Gaussian Splatting for Inverse Rendering.** *Hongze Chen, Zehong Lin, Jun Zhang.*
+<a href="https://arxiv.org/abs/2410.02619">
+  <img src="https://img.shields.io/badge/arXiv-2410.02619-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://openreview.net/forum?id=hJIEtJlvhL">
+  <img src="https://img.shields.io/badge/OpenReview-ICLR25-darkred" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://stopaimme.github.io/GI-GS-site/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/stopaimme/GI-GS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GS-ID: Illumination Decomposition on Gaussian Splatting via Adaptive Light Aggregation and Diffusion-Guided Material Priors.** *Kang Du, Zhihao Liang, Yulin Shen, Zeyu Wang.*
+<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Du_GS-ID_Illumination_Decomposition_on_Gaussian_Splatting_via_Adaptive_Light_Aggregation_ICCV_2025_paper.pdf">
+  <img src="https://img.shields.io/badge/Paper-ICCV25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://kangdu.top/gsid/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/dukang/GS-ID">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+#### II. Environment-based Approximation of Illumination for Non-Lambertian Surfaces
+
+>2024
+
+
+
+>2025
+
+
+
+#### III. Ray Tracing-augmented Inverse Rendering for Non-Lambertian Surfaces
+
+>2025
+
+**GOGS: High-Fidelity Geometry and Relighting for Glossy Objects via Gaussian Surfels.**
+*Xingyuan Yang, Min Wei.*
+<a href="https://arxiv.org/abs/2508.14563">
+  <img src="https://img.shields.io/badge/arXiv-2508.14563-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**MaterialRefGS: Reflective Gaussian Splatting with Multi-view Consistent Material Inference.** *Wenyuan Zhang, Jimin Tang, Weiqi Zhang, Yi Fang, Yu-Shen Liu, Zhizhong Han.*
+<a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118850">
+  <img src="https://img.shields.io/badge/Paper-NeurIPS25-purple" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://wen-yuan-zhang.github.io/MaterialRefGS/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/wen-yuan-zhang/MaterialRefGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**Reflective Gaussian Splatting.** *Yuxuan Yao, Zixuan Zeng, Chun Gu, Xiatian Zhu, Li Zhang.*
+<a href="https://arxiv.org/abs/2412.19282">
+  <img src="https://img.shields.io/badge/arXiv-2412.19282-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://openreview.net/forum?id=xPxHQHDH2u">
+  <img src="https://img.shields.io/badge/OpenReview-ICLR25-darkred" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://fudan-zvg.github.io/ref-gaussian/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/fudan-zvg/ref-gaussian">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+**Editable Physically-based Reflections in Raytraced Gaussian Radiance Fields.** *Yohan Poirier-Ginter, Jeffrey Hu, Jean-Francois Lalonde, George Drettakis.*
+<a href="https://dl.acm.org/doi/full/10.1145/3757377.3763971">
+  <img src="https://img.shields.io/badge/Paper-SIGGRAPH_Asia25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://repo-sam.inria.fr/nerphys/editable-gaussian-reflections/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/graphdeco-inria/editable-gaussian-reflections">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**TransparentGS: Fast Inverse Rendering of Transparent Objects with Gaussians.** *Letian Huang, Dongwei Ye, Jialin Dan, Chengzhi Tao, Huiwen Liu, Kun Zhou, Bo Ren, Yuanqi Li, Yanwen Guo, Jie Guo.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3730892">
+  <img src="https://img.shields.io/badge/Paper-ToG25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://letianhuang.github.io/transparentgs/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/LetianHuang/transparentgs">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**SpecTRe-GS: Modeling Highly Specular Surfaces with Reflected Nearby Objects by Tracing Rays in 3D Gaussian Splatting.** *Jiajun Tang, Fan Fei, Zhihao Li, Xiao Tang, Shiyong Liu, Youyu Chen, Binxiao Huang, Zhenyu Chen, Xiaofei Wu, Boxin Shi.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Tang_SpecTRe-GS_Modeling_Highly_Specular_Surfaces_with_Reflected_Nearby_Objects_by_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://spectre-gs.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+
+**IRGS: Inter-Reflective Gaussian Splatting with 2D Gaussian Ray Tracing.** *Chun Gu, Xiaofei Wei, Zixuan Zeng, Yuxuan Yao, Li Zhang.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Gu_IRGS_Inter-Reflective_Gaussian_Splatting_with_2D_Gaussian_Ray_Tracing_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://fudan-zvg.github.io/IRGS/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/fudan-zvg/IRGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GeoSplatting: Towards Geometry Guided Gaussian Splatting for Physically-based Inverse Rendering.** *Kai Ye, Chong Gao, Guanbin Li, Wenzheng Chen, Baoquan Chen.*
+<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Ye_GeoSplatting_Towards_Geometry_Guided_Gaussian_Splatting_for_Physically-based_Inverse_Rendering_ICCV_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-ICCV25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://pku-vcl-geometry.github.io/GeoSplatting/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/PKU-VCL-Geometry/GeoSplatting">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+# Commonly Used Datasets
 
 ## Specular
 ### Synthetic
