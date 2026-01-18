@@ -3,7 +3,8 @@
 > A curated list of papers and resources linked to **3D Reconstruction and Novel View Synthesis on Non-Lambertian Surfaces**.
 
 # ReadMe
-> The categorization of methods for handling 3D non-Lambertian surfaces is inherently subjective, and no single taxonomy can be considered definitive. To provide a clearer chronological perspective, this repository first groups methods according to their underlying scene representations, namely neural representations and Gaussian Splatting (GS)-based methods. For each type of scene representation, we further organize the manuscripts into three categories:
+> Categorizations:
+> To provide a clearer chronological perspective, this repository first groups methods according to their underlying scene representations, namely neural representations and Gaussian Splatting (GS)-based methods. For each type of scene representation, the manuscripts are further orangized into three categories:
 (i) view-dependent appearance modeling and component decomposition, (ii) ray tracing, and (iii) inverse rendering.
 
 > Notes:
@@ -1562,5 +1563,6 @@
 <a href="https://eikonalfield.mpi-inf.mpg.de/">
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 </a>
+
 
 
