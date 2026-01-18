@@ -13,7 +13,7 @@
 > 1. Inverse rendering can be regarded as a physically grounded form of view-dependent appearance modeling and component decomposition, as it jointly accounts for material properties, illumination, and related factors.
 > 2. Manuscripts that combine ray tracing with inverse rendering are categorized under the Inverse Rendering section.
 > 3. In the Inverse Rendering section, we also include several representative methods that consider materials with arbitrary reflectance. Although these methods are not exclusively designed for non-Lambertian surfaces, they are partially applicable to such cases and may serve as foundations for subsequent work.
-> 4. When a manuscript has been accepted by a journal (conference), and an official early-access, open-access, or proceedings version is available, we no longer provide a link to its arXiv preprint.
+> 4. When a manuscript has been accepted by a journal (conference), and an official early-access, open-access, or proceedings version is available, the link to its arXiv preprint version is no longer provided.
 
 # Contents
 
@@ -1565,6 +1565,7 @@
 <a href="https://eikonalfield.mpi-inf.mpg.de/">
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 </a>
+
 
 
 
