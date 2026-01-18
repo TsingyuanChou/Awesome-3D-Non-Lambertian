@@ -28,8 +28,8 @@
     - [Ray Tracing for Enhanced Rasterization](#ray-tracing-for-enhanced-rasterization)
     - [Inverse Rendering](#inverse-rendering-1)
       - [Inverse Rendering for Surfaces of Arbitrary Reflectance](#i-inverse-rendering-for-surfaces-of-arbitrary-reflectance-1)
-      - [](#ii-environment-based-approximation-of-illumination-for-non-lambertian-surfaces)
-      - [](#iii-ray-tracing-augmented-inverse-rendering-for-non-lambertian-surfaces)
+      - [Environment-based Approximation of Illumination for Non-Lambertian Surfaces](#ii-environment-based-approximation-of-illumination-for-non-lambertian-surfaces)
+      - [Ray Tracing-augmented Inverse Rendering for Non-Lambertian Surfaces](#iii-ray-tracing-augmented-inverse-rendering-for-non-lambertian-surfaces)
 - [Commonly Used Datasets](#commonly-used-datasets)
   - [Specular](#specular)
     - [Synthetic](#synthetic)
@@ -928,7 +928,7 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
-
+---
 
 #### II. Decomposed Appearance from Geometry
 
@@ -1045,6 +1045,9 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
+---
+---
+
 ### Ray Tracing for Enhanced Rasterization
 
 >2025
@@ -1080,6 +1083,8 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
+---
+---
 
 ### Inverse Rendering
 
@@ -1183,16 +1188,200 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
+---
 
 #### II. Environment-based Approximation of Illumination for Non-Lambertian Surfaces
 
 >2024
 
+**Progressive Radiance Distillation for Inverse Rendering with Gaussian Splatting.** *Keyang Ye, Qiming Hou, Kun Zhou.*
+<a href="https://arxiv.org/abs/2408.07595">
+  <img src="https://img.shields.io/badge/arXiv-2408.07595-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**Normal-GS: 3D Gaussian Splatting with Normal-Involved Rendering.** *Meng Wei, Qianyi Wu, Jianmin Zheng, Hamid Rezatofighi, Jianfei Cai.*
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/8bd4f1dbc7a70c6b80ce81b8b4fdc0b2-Abstract-Conference.html">
+  <img src="https://img.shields.io/badge/Paper-NeurIPS24-purple" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://github.com/Meng-Wei/Normal-GS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+**3iGS: Factorised Tensorial Illumination for 3D Gaussian Splatting.** *Zhe Jun Tang, Tat-Jen Cham.* 
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-72630-9_9">
+  <img src="https://img.shields.io/badge/Paper-ECCV24-003E8C" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://github.com/TangZJ/3iGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+**GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces.** *Yingwenqi Jiang, Jiadong Tu, Yuan Liu, Xifeng Gao, Xiaoxiao Long, Wenping Wang, Yuexin Ma.*
+<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Jiang_GaussianShader_3D_Gaussian_Splatting_with_Shading_Functions_for_Reflective_Surfaces_CVPR_2024_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR24-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://asparagus15.github.io/GaussianShader.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/Asparagus15/GaussianShader">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
 
 
 >2025
 
+**GlossGau: Efficient Inverse Rendering for Glossy Surface with Anisotropic Spherical Gaussian.** *Bang Du, Runfa Blark Li, Chen Du, Truong Nguyen.*
+<a href="https://arxiv.org/abs/2502.14129">
+  <img src="https://img.shields.io/badge/arXiv-2502.14129-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
 
+**ROSGS: Relightable Outdoor Scenes With Gaussian Splatting.** *Lianjun Liao, Chunhui Zhang, Tong Wu, Henglei Lv, Bailin Deng, Lin Gao.*
+<a href="https://arxiv.org/abs/2509.11275">
+  <img src="https://img.shields.io/badge/arXiv-2509.11275-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
+**GS-2M: Gaussian Splatting for Joint Mesh Reconstruction and Material Decomposition.** *Dinh Minh Nguyen, Malte Avenhaus, Thomas Lindemeier.*
+<a href="https://arxiv.org/abs/2509.22276">
+  <img src="https://img.shields.io/badge/arXiv-2509.22276-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://ndming.github.io/publications/gs2m/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/ndming/GS-2M">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GAINS: Gaussian-based Inverse Rendering from Sparse Multi-View Captures.** *Patrick Noras, Jun Myeong Choi, Didier Stricker, Pieter Peers, Roni Sengupta.*
+<a href="https://arxiv.org/abs/2512.09925">
+  <img src="https://img.shields.io/badge/arXiv-2512.09925-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://patrickbail.github.io/gains/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+
+**Efficient 3D Gaussian Splatting Surface Rendering for Reflective Objects.** *Peiyao Xie, Xi-En Cheng.*
+<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13793/137932A/Efficient-3D-Gaussian-splatting-surface-rendering-for-reflective-objects/10.1117/12.3077433.short">
+  <img src="https://img.shields.io/badge/Paper-MVAID25-FFF100" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**RTR-GS: 3D Gaussian Splatting for Inverse Rendering with Radiance Transfer and Reflection.** *Yongyang Zhou, Fanglue Zhang, Zichen Wang, Lei Zhang.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3746027.3755197">
+  <img src="https://img.shields.io/badge/Paper-MM25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/ZyyZyy06/RTR-GS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GS-2DGS: Geometrically Supervised 2DGS for Reflective Object Reconstruction.** *Jinguang Tong, Xuesong Li, Fahira Afzal Maken, Sundaram Muthu, Lars Petersson, Chuong Nguyen, Hongdong Li.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Tong_GS-2DGS_Geometrically_Supervised_2DGS_for_Reflective_Object_Reconstruction_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/hirotong/GS2DGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**SVG-IR: Spatially-Varying Gaussian Splatting for Inverse Rendering.** *Hanxiao Sun, Yupeng Gao, Jin Xie, Jian Yang, Beibei Wang.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Sun_SVG-IR_Spatially-Varying_Gaussian_Splatting_for_Inverse_Rendering_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://learner-shx.github.io/project_pages/SVG-IR/index">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/learner-shx/SVG-IR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes.** *Cheng-De Fan, Chen-Wei Chang, Yi-Ruei Liu, Jie-Ying Lee, Jiun-Long Huang, Yu-Chee Tseng, Yu-Lun Liu.*
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Fan_SpectroMotion_Dynamic_3D_Reconstruction_of_Specular_Scenes_CVPR_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-CVPR25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://cdfan0627.github.io/spectromotion/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/cdfan0627/SpectroMotion">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**Gaussian Splatting with Discretized SDF for Relightable Assets.** *Zuo-Liang Zhu, Jian Yang, Beibei Wang.*
+<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhu_Gaussian_Splatting_with_Discretized_SDF_for_Relightable_Assets_ICCV_2025_paper.html">
+  <img src="https://img.shields.io/badge/Paper-ICCV25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://nk-cs-zzl.github.io/projects/dsdf/index.html">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/NK-CS-ZZL/DiscretizedSDF">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GlossyGS: Inverse Rendering of Glossy Objects With 3D Gaussian Splatting.**
+*Shuichang Lai, Letian Huang, Jie Guo, Kai Cheng, Bowen Pan, Xiaoxiao Long.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10908905">
+  <img src="https://img.shields.io/badge/Paper-TVCG25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**GS-ROR2: Bidirectional-guided 3DGS and SDF for Reflective Object Relighting and Reconstruction.**
+*Zuoliang Zhu, Beibei Wang, Jian Yang.*
+<a href="https://dl.acm.org/doi/full/10.1145/3759248">
+  <img src="https://img.shields.io/badge/Paper-ToG25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://nk-cs-zzl.github.io/projects/gsror/index.html">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/NK-CS-ZZL/GS-ROR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+
+**GUS-IR: Gaussian Splatting With Unified Shading for Inverse Rendering.** *Zhihao Liang, Hongdong Li, Kui Jia, Kailing Guo, Qi Zhang.*
+<a href="https://ieeexplore.ieee.org/abstract/document/11045434">
+  <img src="https://img.shields.io/badge/Paper-TPAMI25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+
+**DeferredGS: Decoupled and Relightable Gaussian Splatting With Deferred Shading.** *Tong Wu, Jia-Mu Sun, Yu-Kun Lai, Yuewen Ma, Leif Kobbelt, Lin Gao.*
+<a href="https://ieeexplore.ieee.org/abstract/document/10964878">
+  <img src="https://img.shields.io/badge/Paper-TPAMI25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/IGLICT/DeferredGS">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization.** *Yahao Shi, Yanmin Wu, Chenming Wu, Xing Liu, Chen Zhao, Haocheng Feng.*
+<a href="https://ieeexplore.ieee.org/abstract/document/11030850">
+  <img src="https://img.shields.io/badge/Paper-TPAMI25-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://3dgir.github.io/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/guduxiaolang/GIR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+>2026
+
+**RGS-DR: Reflective Gaussian Surfels with Deferred Rendering for Shiny Objects.** *Georgios Kouros, Minye Wu, Tinne Tuytelaars.*
+<a href="https://arxiv.org/abs/2504.18468">
+  <img src="https://img.shields.io/badge/arXiv-2504.18468-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://3dvconf.github.io/2026/accepted-papers/">
+  <img src="https://img.shields.io/badge/List-3DV26-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/gkouros/RGS-DR">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+**TextureSplat: Per-Primitive Texture Mapping for Reflective Gaussian Splatting.** *Mae Younes, Adnane Boukhayma.*
+<a href="https://arxiv.org/abs/2506.13348">
+  <img src="https://img.shields.io/badge/arXiv-2506.13348-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+<a href="https://3dvconf.github.io/2026/accepted-papers/">
+  <img src="https://img.shields.io/badge/List-3DV26-blue" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/maeyounes/TextureSplat">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+---
 
 #### III. Ray Tracing-augmented Inverse Rendering for Non-Lambertian Surfaces
 
@@ -1241,16 +1430,6 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
-**TransparentGS: Fast Inverse Rendering of Transparent Objects with Gaussians.** *Letian Huang, Dongwei Ye, Jialin Dan, Chengzhi Tao, Huiwen Liu, Kun Zhou, Bo Ren, Yuanqi Li, Yanwen Guo, Jie Guo.*
-<a href="https://dl.acm.org/doi/abs/10.1145/3730892">
-  <img src="https://img.shields.io/badge/Paper-ToG25-red" alt="Paper" height="15" style="vertical-align:middle" />
-</a>
-<a href="https://letianhuang.github.io/transparentgs/">
-  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
-</a>
-<a href="https://github.com/LetianHuang/transparentgs">
-  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
-</a>
 
 **SpecTRe-GS: Modeling Highly Specular Surfaces with Reflected Nearby Objects by Tracing Rays in 3D Gaussian Splatting.** *Jiajun Tang, Fan Fei, Zhihao Li, Xiao Tang, Shiyong Liu, Youyu Chen, Binxiao Huang, Zhenyu Chen, Xiaofei Wu, Boxin Shi.*
 <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Tang_SpecTRe-GS_Modeling_Highly_Specular_Surfaces_with_Reflected_Nearby_Objects_by_CVPR_2025_paper.html">
@@ -1282,6 +1461,19 @@
   <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
 </a>
 
+**TransparentGS: Fast Inverse Rendering of Transparent Objects with Gaussians.** *Letian Huang, Dongwei Ye, Jialin Dan, Chengzhi Tao, Huiwen Liu, Kun Zhou, Bo Ren, Yuanqi Li, Yanwen Guo, Jie Guo.*
+<a href="https://dl.acm.org/doi/abs/10.1145/3730892">
+  <img src="https://img.shields.io/badge/Paper-ToG25-red" alt="Paper" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://letianhuang.github.io/transparentgs/">
+  <img src="https://img.shields.io/badge/Project-Page-yellow" height="15" style="vertical-align:middle" />
+</a>
+<a href="https://github.com/LetianHuang/transparentgs">
+  <img src="https://img.shields.io/badge/Github-Repo-blue?logo=github" height="15" style="vertical-align:middle" />
+</a>
+
+---
+---
 
 # Commonly Used Datasets
 
@@ -1350,6 +1542,8 @@
 </a>
 <a href="https://drive.google.com/drive/folders/1fBeIAI64v5GRoIo7eceGnbqS0sF07YN_"> <img src="https://img.shields.io/badge/Data-Download-green.svg?logo=googledrive" alt="Paper" height="15" style="vertical-align:middle" />
 </a>
+
+
 
 ## Transparent
 
