@@ -1,7 +1,16 @@
 # Awesome 3D Non-Lambertian List
 
-> A curated list of papers & resources linked to **3D Reconstruction and Novel View Synthesis on Non-Lambertian Surface**.
+> A curated list of papers and resources linked to **3D Reconstruction and Novel View Synthesis on Non-Lambertian Surfaces**.
 
+# ReadMe
+> The categorization of methods for handling 3D non-Lambertian surfaces is inherently subjective, and no single taxonomy can be considered definitive. To provide a clearer chronological perspective, this repository first groups methods according to their underlying scene representations, namely neural representations and Gaussian Splatting (GS)-based methods. For each type of scene representation, we further organize the manuscripts into three categories:
+(i) view-dependent appearance modeling and component decomposition, (ii) ray tracing, and (iii) inverse rendering.
+
+> Notes:
+> 1. Inverse rendering can be regarded as a physically grounded form of view-dependent appearance modeling and component decomposition, as it jointly accounts for material properties, illumination, and related factors.
+> 2. Manuscripts that combine ray tracing with inverse rendering are categorized under the Inverse Rendering section.
+> 3. In the Inverse Rendering section, we also include several representative methods that consider materials with arbitrary reflectance. Although these methods are not exclusively designed for non-Lambertian surfaces, they are partially applicable to such cases and may serve as foundations for subsequent work.
+> 4. When a manuscript has been accepted by a journal (conference), and an official early-access, open-access, or proceedings version is available, we no longer provide a link to its arXiv preprint.
 
 # Contents
 
@@ -1553,4 +1562,5 @@
 <a href="https://eikonalfield.mpi-inf.mpg.de/">
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 </a>
+
 
