@@ -1,6 +1,7 @@
 # Awesome 3D Non-Lambertian List
 
-> A curated list of papers and resources linked to **3D Reconstruction and Novel View Synthesis on Non-Lambertian Surfaces**.
+> A curated list of papers and resources linked to 3D Reconstruction and Novel View Synthesis on Non-Lambertian Surfaces.
+> This repository serves as a companion to our under-review manuscript **3D Reconstruction and Novel View Synthesis on Non-Lambertian Surfaces: A Survey**.
 
 # ReadMe
 
@@ -1565,6 +1566,7 @@
 <a href="https://eikonalfield.mpi-inf.mpg.de/">
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 </a>
+
 
 
 
