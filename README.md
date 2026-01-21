@@ -16,6 +16,9 @@
 > 3. In the Inverse Rendering section, we also include several representative methods that consider materials with arbitrary reflectance. Although these methods are not exclusively designed for non-Lambertian surfaces, they are partially applicable to such cases and may serve as foundations for subsequent work.
 > 4. When a manuscript has been accepted by a journal (conference), and an official early-access, open-access, or proceedings version is available, the link to its arXiv preprint version is no longer provided.
 
+> Updates:
+> [Jan.21, 2026] Spherical Voronoi: Directional Appearance as a Differentiable Partition of the Sphere. (arXiv'25)
+
 # Contents
 
 - [Awesome 3D Non-Lambertian List](#awesome-3d-non-lambertian-list)
@@ -907,6 +910,11 @@
   <img src="https://img.shields.io/badge/arXiv-2511.13009-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
 </a>
 
+**Spherical Voronoi: Directional Appearance as a Differentiable Partition of the Sphere.** *Francesco Di Sario, Daniel Rebain, Dor Verbin, Marco Grangetto, Andrea Tagliasacchi.*
+<a href="https://arxiv.org/pdf/2512.14180">
+  <img src="https://img.shields.io/badge/arXiv-2512.14180-b31b1b?logo=arxiv" alt="paper" height="15" style="vertical-align:middle"/>
+</a>
+
 **Dual Spherical Harmonics for 3D Gaussian Splatting: Novel View Synthesis with Dynamic Lighting.** *Alp Bora Orgun, Marco Volino, Adrian Hilton, Jean-Yves Guillemaut.*
 <a href="https://dl.acm.org/doi/full/10.1145/3756863.3769709">
   <img src="https://img.shields.io/badge/Paper-CVMP25-red" alt="Paper" height="15" style="vertical-align:middle" />
@@ -1566,6 +1574,7 @@
 <a href="https://eikonalfield.mpi-inf.mpg.de/">
   <img src="https://img.shields.io/badge/Data-Download-green.svg" height="15" style="vertical-align:middle" />
 </a>
+
 
 
 
